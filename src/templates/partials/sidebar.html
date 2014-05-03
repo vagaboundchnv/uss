@@ -1,15 +1,15 @@
-  <ul class="nav nav-pills nav-stacked">
+  <ul class="nav nav-pills nav-stacked"  ng-controller="TagCtrl">
     <li class="active"><a href="#/urls">Dashboard</a></li>
 
     <li id="tags">
       <a data-toggle="collapse" data-parent="#tags" href="#tagLists" class="collapsed">
-        <span class="badge pull-right">3</span>Tags
+        <span class="badge pull-right" ng-bind="metatags.total_count"></span>Tags
       </a>
       <ul id="tagLists" class="nav nav-pills nav-stacked collapse list-group">
-        <li class="list-group-item"><span class="badge">14</span><a href="#">python</a></li>
-        <li class="list-group-item"><span class="badge">4</span><a href="#">django</a></li>
-        <li class="list-group-item"><span class="badge">1</span><a href="#">auto create mock data</a></li>
-        <li class="list-group-item"><span class="badge">4</span><a href="#">Entertainment</a></li>        
+        <li class="list-group-item" ng-repeat="tag in tags">
+          <span class="badge" ng-bind="tag.count"></span>
+          <a href="#" ng-bind="tag.name"></a>
+        </li>
       </ul>
     </li>
     <li>

@@ -6,4 +6,11 @@ angular.module('ussApp')
 			return $http({method: 'GET', url: '/api/v1/urls/'});
 		}
 	}
+}])
+.service('TagService', ['$http', function($http){
+	return {
+		getTags : function() {
+			return $http({method: 'GET', url: '/api/v1/tags/'});
+		}
+	}
 }]);
