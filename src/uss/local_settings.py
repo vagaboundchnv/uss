@@ -27,3 +27,7 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
     TEMPLATE_DIR,
 )
+
+PIPELINE_AUTO = True
+STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'
+PIPELINE_VERSION = False

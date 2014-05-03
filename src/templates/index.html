@@ -1,12 +1,7 @@
-<!doctype html>
-<html lang="en" ng-app="ussApp">
-<head>
-  <meta charset="utf-8">
-  <title>Uss -- Url Save and Search</title>
-  <link rel="stylesheet" href="/static/libs/bootstrap/dist/css/bootstrap.css"/>
-  <link rel="stylesheet" href="/static/css/app.css"/>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
+
   <div class="container" ng-include src="'partials/header.html'"></div>
   <div class="container">
     <div class="row">
@@ -20,20 +15,4 @@
       </div>
     </div>
   </div>
-  
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="/static/libs/jquery/jquery.min.js"></script>
-  <script src="/static/libs/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="/static/libs/angular/angular.js"></script>
-  <script src="/static/libs/angular-resource/angular-resource.js"></script>  
-  <script src="/static/libs/angular-route/angular-route.js"></script>
-  
-  <script src="/static/js/app.js"></script>
-  <script src="/static/js/services.js"></script>
-  <script src="/static/js/controllers.js"></script>
-  <script src="/static/js/filters.js"></script>
-  <script src="/static/js/directives.js"></script>
-</body>
-</html>
+{% endblock %}
