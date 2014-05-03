@@ -12,6 +12,7 @@ ussApp.config(['$interpolateProvider','$routeProvider', function($interpolatePro
   	templateUrl: 'partials/url-list.html', 
   	controller: 'UrlListCtrl',
   });  
-  $routeProvider.when('/urls/:urlId', {templateUrl: 'partials/url-details.html', controller: 'UrlDetailCtrl'});
+  $routeProvider.when('/url/:urlId', {templateUrl: 'partials/url-detail.html', controller: 'UrlDetailCtrl'});
+  $routeProvider.when('/urls/:tagType', {templateUrl: 'partials/url-list.html', controller: 'UrlListCtrl'});  
   $routeProvider.otherwise({redirectTo: '/urls'});
 }]);

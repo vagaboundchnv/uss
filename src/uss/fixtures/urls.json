@@ -118,5 +118,20 @@
       "scrap_data":{
 
       }
-   }
+   },
+   {
+      "id":6,
+      "link":"http://timschlechter.github.io/bootstrap-tagsinput/examples/",
+      "my_descriptions":"Tag -> Required for uss",
+      "comments":"Awesome",
+      "tags":[
+         {
+            "type":"uss",
+            "value":"uss",
+            "display":"uss"
+         }
+      ],
+      "scrap_data":{
+      }
+   }   
 ]
