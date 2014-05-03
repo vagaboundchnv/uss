@@ -14,7 +14,7 @@ config(['$interpolateProvider','$routeProvider', function($interpolateProvider, 
   $interpolateProvider.endSymbol(']]');  
   $routeProvider.when('/urls', {
   	title:'List of Urls',
-  	templateUrl: 'partials/url-list', 
+  	templateUrl: 'partials/url-list.html', 
   	controller: 'UrlListCtrl',
 	// resolve: {
 	// 	style : function(){
@@ -26,6 +26,6 @@ config(['$interpolateProvider','$routeProvider', function($interpolateProvider, 
  //      }
  //  	}  	
   });  
-  $routeProvider.when('/urls/:urlId', {templateUrl: 'partials/url-details', controller: 'UrlDetailCtrl'});
+  $routeProvider.when('/urls/:urlId', {templateUrl: 'partials/url-details.html', controller: 'UrlDetailCtrl'});
   $routeProvider.otherwise({redirectTo: '/urls'});
 }]);
