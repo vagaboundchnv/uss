@@ -1,0 +1,33 @@
+<!-- <div class="col-md-9">
+	<ul ng-repeat="url in urls">		
+		<a href="#" class="thumbnail">
+			<img data-src="holder.js/100%x180" alt="...">
+		</a>
+		<li>
+			<a href="{{url.link}}">{{url.my_descriptions}}</a>
+		</li>
+		<li>{{url.link}}</li>
+	</ul>
+</div>
+ -->
+	<div ng-repeat="url in urls">
+		<div class="row">
+			<div class="thumbnail row">
+				<div class="col-md-3 url-img">
+					<img ng-src="[[url.scrap_data.thumbnail_url]]">
+				</div>
+				<div class="col-md-9">
+					<h4>[[url.scrap_data.title]]</h4>
+					<p class="excerpt">
+						[[url.scrap_data.description]]
+					</p>
+					<p>
+						<a href="{{url.link}}" target="blank" class="btn btn-default btn-sm">Visit</a> 
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+  
