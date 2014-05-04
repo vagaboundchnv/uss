@@ -38,7 +38,6 @@ class TagResource(USSModelResource):
         tag_map = {}
         for tag in tags:
             tag_map[tag.id] = tag.count
-        print tag_map
         objects = data['objects'] 
         for obj in objects:
             obj.data["count"] = tag_map.get(obj.data["id"], 0) 

@@ -1,8 +1,6 @@
   <ul class="nav nav-pills nav-stacked tags"  ng-controller="TagCtrl">
     <li ng-class="{ active: isActive('/urls')}">
-      <a href="#/urls">
-        <span class="badge pull-right">[[metatags.total_count]]</span>Dashboard
-      </a>
+      <a href="#/urls">Dashboard</a>
     </li>
     
     <li ng-repeat="tag in tags" ng-class="{ active: isActive('/urls/[[tag.name]]')}">

@@ -3,7 +3,7 @@ import json
 
 SCRAPPER_URL = "http://api.embed.ly/1/oembed"
 
-def scrapper(url):    
-    link_to_scrap = SCRAPPER_URL + '?url='+ url['link']
-    response = requests.get(link_to_scrap)
+def scrapper(link_to_scrap):    
+    scrapper_link = SCRAPPER_URL + '?url=' + link_to_scrap 
+    response = requests.get(scrapper_link)
     return json.loads(response.content)
