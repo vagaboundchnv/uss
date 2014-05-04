@@ -2,7 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-var ussApp = angular.module('ussApp', ['ngResource', 'ui.bootstrap', 'ngRoute']);
+var ussApp = angular.module('ussApp', ['ngResource', 'ui.bootstrap', 'ngRoute', 'ngTagsInput']);
 
 ussApp.config(['$interpolateProvider','$routeProvider', function($interpolateProvider, $routeProvider) {
   $interpolateProvider.startSymbol('[[');

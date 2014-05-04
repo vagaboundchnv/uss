@@ -17,13 +17,22 @@ angular.module('ussApp')
 
 .controller('AddModalInstanceCtrl', ['$scope', '$modalInstance', function($scope, $modalInstance) {
   $scope.response = "Succeessfully Added Url";
-
-  $scope.ok = function () {
-    $modalInstance.close($scope.response);
+  $scope.tags = [];
+  $scope.save = function (urlForm) {
+    if (urlForm.$inValid){
+      var requiredElements = userTasksDetailForm.$error.required;
+      for(var i=0; i<requiredElements.length; i++) {
+        requiredElements[i].$dirty = true;
+        requiredElements[i].$prinstine = false;
+      }
+      $scope.errorMessage = true;
+    }
+    else {
+      $modalInstance.close($scope.response);
+    }
   };
 
   $scope.cancel = function () {
     $modalInstance.dismiss('cancel');
   };
-
-}]);
+}])

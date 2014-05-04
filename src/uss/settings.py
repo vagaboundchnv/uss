@@ -167,6 +167,7 @@ PIPELINE_CSS = {
         'source_filenames': (
             r'libs/bootstrap/dist/css/bootstrap.min.css',
             r'libs/toastr/toastr.css',
+            r'libs/ng-tags-input/ng-tags-input.min.css',
         ),
         'output_filename': 'css/uss-plugin.css',
     },
@@ -197,7 +198,8 @@ PIPELINE_JS = {
             r'libs/angular-resource/angular-resource.js',
             r'libs/bootstrap/dist/js/bootstrap.min.js',
             r'libs/angular-bootstrap/ui-bootstrap.min.js',
-            r'libs/angular-bootstrap/ui-bootstrap-tpls.min.js',            
+            r'libs/angular-bootstrap/ui-bootstrap-tpls.min.js',
+            r'libs/ng-tags-input/ng-tags-input.min.js',
         ),
         'output_filename': 'js/uss-lib.js',
     },

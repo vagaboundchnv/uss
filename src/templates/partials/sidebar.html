@@ -1,8 +1,15 @@
-  <ul class="nav nav-pills nav-stacked tags"  ng-controller="TagCtrl">
+  <ul class="nav nav-pills nav-stacked">
+    <li ng-controller="AddUrlCtrl">
+      <form class="search"><input type="text" class="form-control" placeholder="Search..."></form>
+      <button type="button" class="btn btn-danger btn-sm" ng-click="open()">
+        <i class="glyphicon glyphicon-plus"></i>
+      </button>
+    </li>
+  </ul>
+  <ul class="nav nav-pills nav-stacked navbar-fixed tags"  ng-controller="TagCtrl">
     <li ng-class="{ active: isActive('/urls')}">
       <a href="#/urls">Dashboard</a>
     </li>
-    
     <li ng-repeat="tag in tags" ng-class="{ active: isActive('/urls/[[tag.name]]')}">
       <a href="#/urls/[[tag.name]]">
         <span class="badge pull-right">[[tag.count]]</span>
