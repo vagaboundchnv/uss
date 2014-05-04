@@ -17,5 +17,6 @@ urlpatterns = patterns('',
     url(r'^$', 'uss.views.index', name='index'),
     url(r'^partials/(?P<template_name>[-\w]+.html)$', 'uss.views.partials', name='partials'),
     url(r'^admin/', include(admin.site.urls)),
-    (r'api/', include(v1_api.urls)),    
+    (r'api/', include(v1_api.urls)),
+    (r'^accounts/', include('registration.urls')),
 )
