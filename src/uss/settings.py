@@ -166,6 +166,7 @@ PIPELINE_CSS = {
     'uss_plugin_css': {
         'source_filenames': (
             r'libs/bootstrap/dist/css/bootstrap.min.css',
+            r'libs/toastr/toastr.css',
         ),
         'output_filename': 'css/uss-plugin.css',
     },
@@ -179,15 +180,18 @@ PIPELINE_JS = {
             r'js/controllers/url-detail.js',
             r'js/controllers/tag.js',
             r'js/controllers/pagination.js',
+            r'js/controllers/add-url.js',
             r'js/services/services.js',
             r'js/directives/directives.js',
             r'js/filters/filters.js',
+            r'js/factory/notification.js',
         ),
         'output_filename': 'js/uss-code.js',
     },
     'uss_lib_js': {
         'source_filenames': (
             r'libs/jquery/jquery.min.js',
+            r'libs/toastr/toastr.min.js',
             r'libs/angular/angular.min.js',
             r'libs/angular-route/angular-route.min.js',
             r'libs/angular-resource/angular-resource.js',
