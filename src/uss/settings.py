@@ -47,7 +47,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'paradise4paws', 'collected')
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'uss', 'collected')
 
 STATIC_URL = '/static/'
 
@@ -164,7 +164,7 @@ PIPELINE_CSS = {
 
 PIPELINE_JS = {
     'uss_code_js': {
-        'source_filenames': (
+        'source_filenames': (            
             r'js/app.js',
             r'js/controllers/url-list.js',
             r'js/controllers/url-detail.js',
@@ -174,7 +174,7 @@ PIPELINE_JS = {
             r'js/directives/directives.js',
             r'js/filters/filters.js',
         ),
-        'output_filename': 'js/usscode.js',
+        'output_filename': 'js/uss-code.js',
     },
     'uss_lib_js': {
         'source_filenames': (
